@@ -1,8 +1,24 @@
 aid: safety-wing
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/safety-wing.png
 name: Safety Wing
-description: 'Safety Wing is a company surfaced as a portfolio company of creandum and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'SafetyWing is a fintech and insurtech company providing global health and travel insurance
+  for remote workers, digital nomads, and distributed teams. Its consumer product Nomad Insurance offers
+  travel-medical and full health coverage across 180+ countries, while Remote Health lets companies cover
+  employees and contractors worldwide under a single plan. Backed by Creandum, the company positions itself
+  as building a global social safety net so that geography is no barrier to equal opportunity. As of this
+  enrichment pass SafetyWing publishes no public developer API, developer portal, or API documentation; this
+  profile captures its identity, public web properties, and probed domain security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/safety-wing/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Insurance
+- Insurtech
+- Travel Insurance
+- Health Insurance
+- Remote Work
+- Digital Nomads
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +47,18 @@ maintainers:
 common:
 - type: Website
   url: https://safetywing.com/
+- type: Pricing
+  url: https://safetywing.com/nomad-insurance
+- type: TermsOfService
+  url: https://safetywing.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://safetywing.com/privacy-policy
+- type: Support
+  url: https://safetywing.com/contact
+- type: DomainSecurity
+  url: security/safety-wing-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
